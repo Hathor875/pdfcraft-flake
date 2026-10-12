@@ -17,20 +17,20 @@
           wayland
           vulkan-loader
           fontconfig
-          xorg.libX11
-          xorg.libXcursor
-          xorg.libXi
-          xorg.libXrandr
+          libx11
+          libxcursor
+          libxi
+          libxrandr
         ];
 
         sources = {
           x86_64-linux = {
             url = "https://github.com/storytold/pdfcraft/releases/download/v0.6.0/pdfcraft-0.6.0-linux-x86_64.tar.gz";
-            hash = "sha256-mhNqcT4rXJsfCE1UFMfaWnFvKciU9JTXyPGzraS9ClM=";
+            hash = "sha256-mhNuceN7RZ7VdG2+GaNkzoTPXZlcb2yYr2FH2Bg5ClM=";
           };
           aarch64-linux = {
             url = "https://github.com/storytold/pdfcraft/releases/download/v0.6.0/pdfcraft-0.6.0-linux-aarch64.tar.gz";
-            hash = "sha256-IPtRVdtc7J9f4t053+x/Wb7S30TycK/vmWl2i6M4ilk=";
+            hash = "sha256-IPtRddtcmSNVtvHHPMWxY74F0vTycK/vahhLuuOzilk=";
           };
         };
 

@@ -8,18 +8,18 @@ Bundles both the desktop application (`pdfcraft`) and the headless CLI (`pdfcraf
 
 Run the desktop application:
 ```bash
-nix run github:<your-username>/pdfcraft-flake
+nix run github:Hathor875/pdfcraft-flake
 ```
 
 Run the CLI tool:
 ```bash
-nix run github:<your-username>/pdfcraft-flake#pdfcraft-cli -- --help
+nix run github:Hathor875/pdfcraft-flake#pdfcraft-cli -- --help
 ```
 
 ## Install in User Profile
 
 ```bash
-nix profile install github:<your-username>/pdfcraft-flake
+nix profile install github:Hathor875/pdfcraft-flake
 ```
 
 ## NixOS Configuration
@@ -30,7 +30,7 @@ Add to your system's `flake.nix`:
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    pdfcraft.url = "github:<your-username>/pdfcraft-flake";
+    pdfcraft.url = "github:Hathor875/pdfcraft-flake";
   };
 
   outputs = { self, nixpkgs, pdfcraft, ... }@inputs: {
@@ -54,7 +54,7 @@ Add to your system's `flake.nix`:
 ```nix
 {
   inputs = {
-    pdfcraft.url = "github:<your-username>/pdfcraft-flake";
+    pdfcraft.url = "github:Hathor875/pdfcraft-flake";
   };
 
   # in home.nix:
