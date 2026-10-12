@@ -64,7 +64,8 @@
 
           postFixup = ''
             wrapProgram $out/bin/pdfcraft \
-              --prefix LD_LIBRARY_PATH : ${pkgs.lib.makeLibraryPath runtimeLibs}
+              --prefix LD_LIBRARY_PATH : ${pkgs.lib.makeLibraryPath runtimeLibs} \
+              --suffix LD_LIBRARY_PATH : "/run/opengl-driver/lib:/run/opengl-driver-32/lib:/usr/lib64:/usr/lib/x86_64-linux-gnu:/usr/lib:/usr/lib/aarch64-linux-gnu"
           '';
 
           meta = with pkgs.lib; {
